@@ -14,7 +14,7 @@ def primefactors(n):
     return factors
 
 # Levenshtein distance (2-matrix row implementation)
-# god resource: http://www.let.rug.nl/~kleiweg/lev/
+# good resource: http://www.let.rug.nl/~kleiweg/lev/
 def levenshtein(s, t):
         if s == t: return 0
         elif len(s) == 0: return len(t)
