@@ -1,5 +1,5 @@
 #Interesting Problems!
------
+
 This is a repository of solutions to some exercises that I have completed from CodeWars or other problems I find online. Additionally, I have created an [interesting_code.py](interesting_code.py) file for the code that I want to look back on later.
 
 ---
