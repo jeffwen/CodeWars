@@ -14,3 +14,5 @@ The following list is semi in the order that I attempted these problems. (Some o
   - Given a string, encodes the string using [ROT13](https://en.wikipedia.org/wiki/ROT13) encoding
 - [long_mult.py](long_mult.py)*
   - Uses long hand multiplication to perform multiplication. Long hand multiplication is how humans are typically taught to multiply by hand.
+- [palindrome.py](palindrome.py)
+  - Given a number, return the number of special steps required to return a palindrome. The special step is adding the number to its reverse. 
