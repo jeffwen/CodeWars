@@ -15,4 +15,6 @@ The following list is semi in the order that I attempted these problems. (Some o
 - [long_mult.py](long_mult.py)*
   - Uses long hand multiplication to perform multiplication. Long hand multiplication is how humans are typically taught to multiply by hand.
 - [palindrome.py](palindrome.py)
-  - Given a number, return the number of special steps required to return a palindrome. The special step is adding the number to its reverse. 
+  - Given a number, return the number of special steps required to return a palindrome. The special step is adding the number to its reverse.
+- [gap.py](gap.py)
+  - Input is a gap number, start, and stop range. The goal is to return a pair of primes in the start and stop range that have a gap equal to the gap number input. (this file also includes the Sieve of Eratosthenes)
