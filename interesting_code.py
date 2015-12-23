@@ -13,6 +13,19 @@ def primefactors(n):
             break
     return factors
 
+def primefactors_1(n):
+    factors = []
+    d = 2
+    while n > 1:
+        while n%d == 0:
+            n /= d
+            factors.append(d)
+        d += 1
+        if d*d > n and n > 1:
+            factors.append(n)
+            break
+    return factors
+
 # Levenshtein distance (2-matrix row implementation)
 # good resource: http://www.let.rug.nl/~kleiweg/lev/
 def levenshtein(s, t):
@@ -56,3 +69,28 @@ def long_mult(x,y):
     for row in range(len(aList)):
         total += int(''.join(reverse_a[row][::-1]) + ('0'*row))
     return total
+
+
+# Sieve of Eratosthenes               
+def primeSieve(sieveSize):
+     # Returns a list of prime numbers calculated using
+     # the Sieve of Eratosthenes algorithm.
+     sieve = [True] * sieveSize
+     sieve[0] = False # zero and one are not prime numbers
+     sieve[1] = False
+
+     # create the sieve
+     for i in range(2, int((sieveSize)**0.5) + 1):
+         pointer = i * 2
+         while pointer < sieveSize:
+             sieve[pointer] = False
+             pointer += i
+
+     # compile the list of primes
+     primes = []
+     for i in range(sieveSize):
+         if sieve[i] == True:
+             primes.append(i)
+
+     return primes
+ 
